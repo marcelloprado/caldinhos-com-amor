@@ -1,0 +1,215 @@
+html {
+    font-size:62.5%;
+}
+
+body {
+    display:grid;
+    grid-template-areas:"header header header header"
+                         "sobre sobre sobre sobre"
+                         "fotos fotos fotos fotos"
+                         "cardapio cardapio cardapio cardapio"
+                         "rodape rodape rodape rodape";
+                          
+    grid-template-columns:repeat(4, 1fr);
+    font-size:1.6rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* HEADER */
+
+.header {
+    grid-area:header;
+    background-color:#CE9B67;
+    font-family: 'Great Vibes', cursive;
+}
+
+.header .header-container {
+    display:flex;
+    padding:25px 40px;
+    justify-content:space-between;
+    align-items:center;
+    min-height:75px;
+}
+
+.header h1 {
+    font-size:3.5rem;
+    /* font-weight:bold; */
+    transition:0.3s ease-in-out;
+}
+
+.header a:hover h1 {
+    color:red;
+}
+
+/* SOBRE */
+
+.sobre {
+    grid-area:sobre;
+    display: grid;
+    height:50px;
+    grid-template-columns: 1fr 1fr;
+    height:55vh;
+    max-width:var(--max-width-size);
+}
+
+.sobre .img-apresenta.right {
+    background:url('/src/image/caldo01.png') center center no-repeat;
+    background-size:cover;
+}
+
+.sobre .apresenta {
+    display:flex;
+    flex-direction:column;
+    background-color:#FFDEC5;
+    justify-content:center;
+    align-items:center;
+    line-height:1.6;
+}
+
+.sobre .apresenta h3 {
+    font-size:2.5rem;
+    font-weight:bold;
+    text-shadow:0.1em 0.1em #929191;
+}
+
+.sobre .apresenta p {
+    font-size:1.8rem;
+    font-weight:bold;
+    margin:30px;
+}
+
+.sobre .apresenta span {
+    color:red;
+    display:grid;
+    text-align:center;
+    font-weight:bold;
+    margin-top:20px;
+    animation:downarrow 0.6s infinite alternate ease-in-out;
+    font-family: 'Great Vibes', cursive;
+    font-size:30px;
+}
+
+@-webkit-keyframes downarrow {
+    0% {-webkit-transform:translateY(0); opacity: 0.4;}
+    100% { -webkit-transform:translateY(0.7em); opacity:0.9;}
+}
+
+/* FOTOS */
+
+ .fotos {
+    grid-area:fotos;
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+}
+
+.fotos img {
+    height:250px;
+    border:5px solid #CE9B67;
+}
+
+.foto  {
+    height:300px;
+    margin:30px;
+    text-align: center;
+}
+
+.foto h3 {
+color:#D1551A;
+padding:20px;
+font-weight:bold;
+font-size:20px;
+}
+
+/* CARDÁPIO */
+
+.cardapio {
+    grid-area:cardapio;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    background-color:burlywood;
+    max-width:var(--max-width-size);
+    margin:80px auto;
+    
+}
+
+.cardapio .cardapio-left {
+    padding:10%;
+    display:grid;
+    grid-template-columns:1fr;
+    justify-content:left;
+    align-items:center;
+    background-color:#D1551A
+    
+}
+
+.cardapio .cardapio-left h3 {
+    font-weight:bold;
+    font-size:2rem;
+    text-align: center;
+}
+
+.cardapio .image-left {
+    background:url(/src/image/caldo-feijao.jpg) center center no-repeat;
+    height:300px;
+    
+}
+
+.cardapio .cardapio-right {
+    padding:10%;
+    display:grid;
+    grid-template-columns:1fr;
+    justify-content:left;
+    align-items:center;
+    background-color:#D1551A;
+    
+}
+
+.cardapio .cardapio-right h3 {
+    font-weight:bold;
+    font-size:2rem;
+    text-align: center;
+}
+
+.image-right {
+    background:url(/src/image/caldo-verde.jpg) center center no-repeat;
+    height:300px;
+   
+}
+
+
+.rodape {
+    grid-area: rodape;
+    background-color: #DEB887;
+    height:200px;
+}
+
+/* RESPONSIVIDADE */
+
+@media(max-width:900px) {
+    .fotos {
+        grid-template-columns:repeat(2, 2fr);
+}
+}
+
+@media (max-width:600px) {
+    .cardapio p {
+        text-align:center;
+        
+    }
+    .cardapio {
+        grid-template-columns:1fr;
+        grid-template-rows:repeat(4, 1fr);
+    }
+       
+    .fotos {
+        grid-template-columns:1fr;
+        grid-template-rows:repeat(4, 1fr);
+    }
+    .sobre {
+        grid-template-columns:none;
+        margin-bottom:50px;
+    }
+    .sobre .img-apresenta.right {
+        height:500px;
+    }
+}
