@@ -53,10 +53,10 @@ body {
     max-width:var(--max-width-size);
 }
 
-.sobre .img-apresenta.right {
-    background:url('/src/image/caldo01.png') center center no-repeat;
+/* .sobre .img-apresenta.right {
+    background:url('image/caldo01.png') center center no-repeat;
     background-size:cover;
-}
+} */
 
 .sobre .apresenta {
     display:flex;
@@ -110,9 +110,7 @@ body {
     
 }
 /* .texto {
-        
-    
-    
+
 } */
 .texto-cardapio {
     font-family:'Great Vibes', cursive;
