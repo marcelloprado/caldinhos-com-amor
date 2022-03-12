@@ -6,8 +6,9 @@ body {
     display:grid;
     grid-template-areas:"header header header header"
                          "sobre sobre sobre sobre"
-                         "fotos fotos fotos fotos"
+                         "texto texto texto texto"
                          "cardapio cardapio cardapio cardapio"
+                         "fotos fotos fotos fotos"
                          "rodape rodape rodape rodape";
                           
     grid-template-columns:repeat(4, 1fr);
@@ -94,9 +95,56 @@ body {
     100% { -webkit-transform:translateY(0.7em); opacity:0.9;}
 }
 
+
+/* CARDÁPIO */
+
+.cardapio {
+    grid-area:cardapio;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows:3, 1fr;
+    max-width:var(--max-width-size);
+    margin:100px auto;
+    text-align: center;
+    
+    
+}
+/* .texto {
+        
+    
+    
+} */
+.texto-cardapio {
+    font-family:'Great Vibes', cursive;
+    color:blue;
+    font-size:30px;
+    padding:20px;
+}
+
+.cardapio h2 {
+    font-family:'Great Vibes', cursive;
+    margin-bottom:10px;
+    font-size:30px;
+    text-align: center;
+    
+}
+
+.cardapio img {
+    width:200px;
+    height:200px;
+    border:5px solid #CE9B67;
+    border-radius:5%;
+    
+}
+.cardapio p {
+    padding:20px;
+    
+    
+}
+
 /* FOTOS */
 
- .fotos {
+.fotos {
     grid-area:fotos;
     display:grid;
     grid-template-columns:repeat(4, 1fr);
@@ -119,36 +167,6 @@ color:#D1551A;
 padding:20px;
 font-weight:bold;
 font-size:20px;
-}
-
-/* CARDÁPIO */
-
-.cardapio {
-    grid-area:cardapio;
-    display:grid;
-    grid-template-columns:repeat(2, 1fr);
-    grid-template-rows:3, 1fr;
-    /* background-color:burlywood; */
-    max-width:var(--max-width-size);
-    margin:80px auto;
-    
-}
-
-.cardapio img {
-    width:200px;
-    height:200px;
-    padding:20px;
-    justify-content:center;
-    align-items: center;
-    margin-left:30px;
-    border:5px solid #CE9B67;
-    border-radius:5%;
-    
-}
-.cardapio p {
-    display:grid;
-    
-    
 }
 
 .rodape {
