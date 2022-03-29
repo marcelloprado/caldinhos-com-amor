@@ -16,6 +16,7 @@ body {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+
 /* HEADER */
 
 .header {
@@ -53,10 +54,9 @@ body {
     max-width:var(--max-width-size);
 }
 
-/* .sobre .img-apresenta.right {
-    background:url('image/caldo01.png') center center no-repeat;
+.sobre .img-apresenta.right {
     background-size:cover;
-} */
+}
 
 .sobre .apresenta {
     display:flex;
@@ -91,8 +91,8 @@ body {
 }
 
 @-webkit-keyframes downarrow {
-    0% {-webkit-transform:translateY(0); opacity: 0.4;}
-    100% { -webkit-transform:translateY(0.7em); opacity:0.9;}
+    0% {-webkit-transform:translateY(0); opacity: 0.4;};
+    100% { -webkit-transform:translateY(0.7em); opacity:0.9;};
 }
 
 
@@ -102,21 +102,30 @@ body {
     grid-area:cardapio;
     display:grid;
     grid-template-columns:repeat(2, 1fr);
-    grid-template-rows:3, 1fr;
+    grid-template-rows:repeat(3, 1fr);
     max-width:var(--max-width-size);
     margin:100px auto;
     text-align: center;
+    gap:40px;
     
     
 }
-/* .texto {
-
-} */
+.texto {
+    grid-area:texto;
+    display: grid;
+    width:100%;
+    margin-top:450px;
+    
+}
 .texto-cardapio {
+    display:flex;
     font-family:'Great Vibes', cursive;
     color:blue;
     font-size:30px;
     padding:20px;
+    justify-content: center;
+   
+    
 }
 
 .cardapio h2 {
