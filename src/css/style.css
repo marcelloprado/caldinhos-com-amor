@@ -56,6 +56,8 @@ body {
 
 .sobre .img-apresenta.right {
     background-size:cover;
+    background-color: #FFDEC5;
+   
 }
 
 .sobre .apresenta {
@@ -65,6 +67,7 @@ body {
     justify-content:center;
     align-items:center;
     line-height:1.6;
+    
 }
 
 .sobre .apresenta h3 {
@@ -107,16 +110,16 @@ body {
     margin:100px auto;
     text-align: center;
     gap:40px;
-    
-    
 }
+
 .texto {
     grid-area:texto;
-    display: grid;
+    display: flex;
     width:100%;
-    margin-top:450px;
-    
+    margin-top:300px;
+    justify-content: center;
 }
+
 .texto-cardapio {
     display:flex;
     font-family:'Great Vibes', cursive;
@@ -124,8 +127,6 @@ body {
     font-size:30px;
     padding:20px;
     justify-content: center;
-   
-    
 }
 
 .cardapio h2 {
@@ -133,7 +134,6 @@ body {
     margin-bottom:10px;
     font-size:30px;
     text-align: center;
-    
 }
 
 .cardapio img {
@@ -141,12 +141,9 @@ body {
     height:200px;
     border:5px solid #CE9B67;
     border-radius:5%;
-    
 }
 .cardapio p {
     padding:20px;
-    
-    
 }
 
 /* FOTOS */
@@ -178,44 +175,22 @@ font-size:20px;
 
 .rodape {
     grid-area: rodape;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: end;
     background-color: #DEB887;
     height:200px;
+   
+}
+.rodape .redes-sociais i{
+    font-size:2.5rem;
+    margin-bottom:50px;
+    margin-left:30px;
 }
 
-/* RESPONSIVIDADE */
-
-@media(max-width:595px) {
-    .foto {
-        margin-top:50px;
-    }
-}
-
-@media(max-width:900px) {
-    .fotos {
-        grid-template-columns:repeat(2, 2fr);
-}
-}
-
-@media (max-width:600px) {
-    .cardapio p {
-        text-align:center;
-        
-    }
-    .cardapio {
-        grid-template-columns:1fr;
-        grid-template-rows:repeat(4, 1fr);
-    }
-       
-    .fotos {
-        grid-template-columns:1fr;
-        grid-template-rows:repeat(4, 1fr);
-        margin-top: 250px;
-    }
-    .sobre {
-        grid-template-columns:none;
-        margin-bottom:50px;
-    }
-    .sobre .img-apresenta.right {
-        height:500px;
-    }
+.rodape .copyright {
+    display:grid;
+    justify-content: center;
+    
 }
