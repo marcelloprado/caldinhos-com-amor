@@ -1,5 +1,6 @@
 html {
     font-size:62.5%;
+    
 }
 
 body {
@@ -14,6 +15,7 @@ body {
     grid-template-columns:repeat(4, 1fr);
     font-size:1.6rem;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
 }
 
 
@@ -31,6 +33,7 @@ body {
     justify-content:space-between;
     align-items:center;
     min-height:75px;
+    
 }
 
 .header h1 {
@@ -52,12 +55,13 @@ body {
     grid-template-columns: 1fr 1fr;
     height:55vh;
     max-width:var(--max-width-size);
+    flex-wrap:wrap;
 }
 
 .sobre .img-apresenta.right {
     background-size:cover;
     background-color: #FFDEC5;
-   
+    flex-wrap:wrap;
 }
 
 .sobre .apresenta {
@@ -67,7 +71,6 @@ body {
     justify-content:center;
     align-items:center;
     line-height:1.6;
-    
 }
 
 .sobre .apresenta h3 {
@@ -80,6 +83,7 @@ body {
     font-size:1.8rem;
     font-weight:bold;
     margin:30px;
+    flex-wrap:wrap;
 }
 
 .sobre .apresenta span {
@@ -87,13 +91,14 @@ body {
     display:grid;
     text-align:center;
     font-weight:bold;
-    margin-top:20px;
-    animation:downarrow 0.6s infinite alternate ease-in-out;
+    margin-top:50px;
+    animation:slidein 0.6s infinite alternate ease-in-out;
     font-family: 'Great Vibes', cursive;
     font-size:30px;
+    
 }
 
-@-webkit-keyframes downarrow {
+@-webkit-keyframes slidein {
     0% {-webkit-transform:translateY(0); opacity: 0.4;};
     100% { -webkit-transform:translateY(0.7em); opacity:0.9;};
 }
@@ -110,37 +115,32 @@ body {
     margin:100px auto;
     text-align: center;
     gap:40px;
+    
 }
-
-.texto {
-    grid-area:texto;
-    display: flex;
-    width:100%;
-    margin-top:300px;
-    justify-content: center;
-}
-
 .texto-cardapio {
+    grid-area:texto;
     display:flex;
     font-family:'Great Vibes', cursive;
     color:blue;
     font-size:30px;
     padding:20px;
     justify-content: center;
+    width:100%;
+    flex-wrap:wrap;
+    margin-top:450px;
 }
-
 .cardapio h2 {
     font-family:'Great Vibes', cursive;
     margin-bottom:10px;
     font-size:30px;
     text-align: center;
 }
-
 .cardapio img {
     width:200px;
     height:200px;
     border:5px solid #CE9B67;
     border-radius:5%;
+    flex-wrap:wrap;
 }
 .cardapio p {
     padding:20px;
