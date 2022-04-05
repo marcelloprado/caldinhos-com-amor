@@ -51,15 +51,14 @@ body {
 .sobre {
     grid-area:sobre;
     display: grid;
-    height:50px;
     grid-template-columns: 1fr 1fr;
-    height:55vh;
+    min-height:auto;
     max-width:var(--max-width-size);
     flex-wrap:wrap;
 }
 
 .sobre .img-apresenta.right {
-    background-size:cover;
+    /* background-size:cover; */
     background-color: #FFDEC5;
     flex-wrap:wrap;
 }
@@ -76,7 +75,7 @@ body {
 .sobre .apresenta h3 {
     font-size:2.5rem;
     font-weight:bold;
-    text-shadow:0.1em 0.1em #929191;
+    margin-top:50px;
 }
 
 .sobre .apresenta p {
@@ -98,7 +97,7 @@ body {
     
 }
 
-@-webkit-keyframes slidein {
+@keyframes slidein {
     0% {-webkit-transform:translateY(0); opacity: 0.4;};
     100% { -webkit-transform:translateY(0.7em); opacity:0.9;};
 }
@@ -127,7 +126,7 @@ body {
     justify-content: center;
     width:100%;
     flex-wrap:wrap;
-    margin-top:450px;
+    margin-top:50px;
 }
 .cardapio h2 {
     font-family:'Great Vibes', cursive;

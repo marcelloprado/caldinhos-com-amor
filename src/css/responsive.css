@@ -1,28 +1,15 @@
-@media (max-width:1024px) {
-    .texto-cardapio {
-    margin-top:106px
-    }
-}
-
 @media(max-width:688px) {
     .fotos {
         grid-template-columns:repeat(2, 1fr);
         flex-wrap: wrap;
     }
-    .texto-cardapio {
-        margin-top:50px
-        }
 }
 
 @media(max-width:425px) {
     .cardapio {
         grid-template-columns:repeat(1, 1fr);
-        margin-top: 20px;
     }
-    .texto-cardapio {
-        margin-top:400px
-        }
-        .sobre {
+    .sobre {
             grid-template-columns:repeat(1, 1fr);
         }
 }
@@ -31,12 +18,8 @@
 @media(max-width:414px) {
     .cardapio {
         grid-template-columns:repeat(1, 1fr);
-        margin-top: 20px;
     }
-    .texto-cardapio {
-        margin-top:400px
-        }
-        .sobre {
+    .sobre {
             grid-template-columns:repeat(1, 1fr);
         }
 }
